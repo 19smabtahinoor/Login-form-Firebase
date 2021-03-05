@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Login Form::S.M.Abtahi Noor</title>
+    <link href="images/favicon.png"rel="icon"type="image/icon">
+    <link href="style.css"rel="stylesheet">
+</head>
+    <body>
+        <div class="container">
+            <!-- login form division -->
+            <div class="login-form">
+                <h2 class="heading-login-form">Sign Up here</h2>
+                <div class="upload-picture">
+                    <img src="images/profile.png"id="user-photo">
+                    <input type="file" id="file-upload">
+                    <label for="file-upload"id="uploadbtn"><img src="images/camera.png"class="cameraPic"></label>
+
+                </div>
+                <div class="input-boxes">
+                    <input type="text"class="user-name"placeholder="Name" required>
+                    <input type="email"class="user-email"placeholder="Email"required>
+                    <input type="number"class="user-number"placeholder="Phone Number"required>
+                    <input type="password"class="user-password"placeholder="Password"required>
+                </div>
+                <div class="terms-condition">
+                    <input type="checkbox"class="checkbox">
+                    <span class="agreeText">I agree to <b>terms</b> and <b>Privacy polices</b> </span>
+                </div>
+                <div class="sign-up-btn">
+                    <button class="submitbtn">Sign Up</button>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="pop-up-text">
+            <h1 class="pop-up-heading">Congratulations!!!</h1>
+            <div class="main-text">
+                <p class="para-text">Congratualations,you are logged in. Your data has been saved in database.
+            </div>
+
+            <div class="somebtn">
+                <button class="ok-btn">OK</button>
+            </div>
+
+        </div>
+        <div class="back-drop"></div>
+
+        <span class="footerText">Project by <a href="https://sites.google.com/view/projectsgallery/"target="_blank">S.M.Abtahi Noor</a></span>
+
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
