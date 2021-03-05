@@ -38,12 +38,12 @@ h2.heading-login-form {
   padding-bottom: 30px;
 }
 
-.upload-picture {
+.uploadpicture {
   width: 100%;
   height: 156px;
 }
 
-img#user-photo {
+img#userphoto {
   width: 150px;
   height: 150px;
   position: relative;
@@ -118,11 +118,11 @@ img.cameraPic {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
-.upload-picture:hover .cameraPic {
+.uploadpicture:hover .cameraPic {
   opacity: 1;
 }
 
-input#file-upload {
+input#fileupload {
   display: none;
 }
 
@@ -182,10 +182,10 @@ button.ok-btn {
   font-family: sans-serif;
   font-size: 16px;
   margin-right: 1px;
-  cursor:pointer;
+  cursor: pointer;
 }
-.ok-btn:hover{
-  background:#27233a;
+.ok-btn:hover {
+  background: #27233a;
 }
 .back-drop {
   width: 100%;

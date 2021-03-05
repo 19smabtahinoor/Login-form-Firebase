@@ -11,23 +11,18 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-
-
 //upload profile picture
-const img = document.querySelector('#user-photo');
-const file = document.querySelector('#file-upload');
+const img = document.querySelector('#userphoto');
+const file = document.querySelector('#fileupload');
 
-file.addEventListener('change', ()=>{
-    let choosedFile = this.files[0];
 
+file.addEventListener('change', function(){
+    const choosedFile = this.files[0];
     if (choosedFile) {
-
-        const reader = new FileReader();
-
-        reader.addEventListener('load',()=>{
+        const reader = new FileReader(); 
+        reader.addEventListener('load', function(){
             img.setAttribute('src', reader.result);
         });
-
         reader.readAsDataURL(choosedFile);
     }
 });
@@ -51,7 +46,7 @@ signUp.addEventListener("click",()=>{
 
 //user data
 var userName,userEmail,userPhoneNumber,userPassword;
-function userData(){
+const userData = () =>{
      userName = document.querySelector(".user-name").value;
      userEmail =document.querySelector(".user-email").value;
      userPhoneNumber = document.querySelector(".user-number").value;
