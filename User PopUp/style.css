@@ -105,22 +105,18 @@ button.submitbtn:hover {
   background: #61102d;
 }
 img.cameraPic {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   position: relative;
-  top: -10%;
-  left: 11%;
+  top: -4%;
+  left: 23%;
   transform: translate(-50%, -8%);
-  opacity: 0;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-}
-.uploadpicture:hover .cameraPic {
   opacity: 1;
+  background: rgb(255 255 255);
+  border-radius: 100%;
+  padding: 11px;
 }
+
 
 input#fileupload {
   display: none;
